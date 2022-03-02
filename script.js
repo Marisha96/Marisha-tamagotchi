@@ -32,4 +32,9 @@ const getData = () => [
 {imgSrc: "./South-Africa.gif", name: "South-Africa"},
 {imgSrc: "./Vincy.gif", name: "Vincy"},
 ];
-const data = getData();
+// const data = getData();
+
+const randomize = () => {
+    const cardData = getData();
+    console.log(cardData);
+};
