@@ -1,0 +1,23 @@
+.face,
+.back {
+    width:100%;
+    height:100%;
+}
+
+body  {
+    background-color: rgb(0, 110, 255);
+    background: -webkit-linear-gradient(
+        to right,
+        #ff5050,
+        #ff9999
+    );
+    background: linear-gradient(
+        to right,
+        #ff5050,
+        #ff9999 
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
