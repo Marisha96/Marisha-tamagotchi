@@ -29,4 +29,4 @@ Game state
 Game state is the collection of all your variables that the game needs to run. State variables change over time as the user plays the game. It's a convenient practice to let all your game state variables at the beginning of your js file in the global scope. You can initialize them as any starting values you need, or as null if appropriate. Then all your game functions will be able to modify them.
 
 It's important to remember that our game state is just js variables, and it's up to us to represent them in the DOM as needed! Always strive to keep your DOM in sync with your javascript state variables. One good tip for this is to change the DOM accordingly whenever you change a js variable.
->>>>>>> ff9dc92 (First)
+
