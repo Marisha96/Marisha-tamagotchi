@@ -59,6 +59,11 @@ const flagGenerator = () => {
         section.appendChild(flag);
         flag.appendChild(face);
         flag.appendChild(back);
+
+        flag.addEventListener('click', (m) => {
+            flag.classList.toggle('toggleFlag');
+        });
     }); 
 };
  flagGenerator();
+
