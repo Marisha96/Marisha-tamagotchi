@@ -1,4 +1,7 @@
 # Marisha-Memory Matcher
+#Are you Smart?
+
+
 Goals
 Identify the MVP for a project
 Separate project goals into core and stretch goals
