@@ -6,7 +6,14 @@ Is your memory fast enough?
 Basically, they will be a start button for you to begin the game.
 Once you begin they will be a score board for every game completed.
 
-Once completed and refresh, the cards placements will not be the same, it will be switched around , 
-no way for you to cheat.
+After selecting you answer, the cards shift left and a new card is pulled 
+from the pile on the right. The card that was previously face up on the right is now face 
+down in the middle. And the card previously in the middle is now on the left. 
+You need to determine if the newly pulled card matches the card now on the left.
+Or it can be anywhere on the game once refresh, they will be no way to cheat and i 
+will not guide you to cheat.
+
+
+
 
 
