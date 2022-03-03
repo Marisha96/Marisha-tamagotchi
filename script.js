@@ -46,6 +46,8 @@ randomize();
 const flagGenerator = () => {
     const flagData = randomize();
     // console.log(flagData)
+
+    
     flagData.forEach((item) => {
         const flag = document.createElement("div");  
         const face = document.createElement("img")
@@ -55,15 +57,22 @@ const flagGenerator = () => {
         back.classList = 'back';
         
         face.src = item.imgSrc;
+        flag.setAttribute("name", item.name);
         
         section.appendChild(flag);
         flag.appendChild(face);
         flag.appendChild(back);
 
         flag.addEventListener('click', (m) => {
-            flag.classList.toggle('toggleFlag');
-        });
+            flag.classList.toggle("toggleFlag");
+            checkFlags(m);
     }); 
+});
 };
+const checkFlags = (m) => {
+    console.log(m);
+    const clickedFlag = m.target
+    clickedFlag.classList.add("flipped")
+    // console.log(clickedFlag);
+}
  flagGenerator();
-

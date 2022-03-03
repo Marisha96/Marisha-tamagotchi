@@ -6,3 +6,9 @@ i am stil deciding the colors, of which i want to use, these colors may or may n
 Created functions in a different degree for the flags/cards to turn over
 Made another function so that the flags can toggle back and 
 front.
+
+
+Making another function,
+ so know when the cards is flipped and they 
+ are equal they will stay flipped, if not they
+  will turn back over.
