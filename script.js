@@ -11,30 +11,54 @@ areYouSmart.textContent = areYouLives;
 // images.src = imgscr
 
 const getData = () => [
-{ imgSrc: "./African American fLAG.gif", name: "African American fLAG"},
-{imgSrc: "./Barbados.gif", name: "Barbados"},
-{imgSrc: "./ethiopia.gif", name: "ethiopia"},
-{imgSrc: "./Ghana.gif", name: "Ghana"},
-{imgSrc: "./Guyana.gif", name: "Guyana"},
-{imgSrc: "./Haiti.gif", name: "Haiti"},
-{imgSrc: "./Jmaiaca.gif", name: "Jamaica"},
-{imgSrc: "./Nigeria.gif", name: "Nigeria"},
-{imgSrc: "./South-Africa.gif", name: "South-Africa"},
-{imgSrc: "./Vincy.gif", name: "Vincy"},
-{ imgSrc: "./African American fLAG.gif", name: "African American fLAG"},
-{imgSrc: "./Barbados.gif", name: "Barbados"},
-{imgSrc: "./ethiopia.gif", name: "ethiopia"},
-{imgSrc: "./Ghana.gif", name: "Ghana"},
-{imgSrc: "./Guyana.gif", name: "Guyana"},
-{imgSrc: "./Haiti.gif", name: "Haiti"},
-{imgSrc: "./Jmaiaca.gif", name: "Jamaica"},
-{imgSrc: "./Nigeria.gif", name: "Nigeria"},
-{imgSrc: "./South-Africa.gif", name: "South-Africa"},
-{imgSrc: "./Vincy.gif", name: "Vincy"},
+{imgSrc: "./images/dr.gif", name: "dr"},
+{imgSrc: "./images/barbados.gif", name: "barbados"},
+{imgSrc: "./images/ethiopia.gif", name: "ethiopia"},
+{imgSrc: "./images/ghana.gif", name: "ghana"},
+{imgSrc: "./images/guyana.gif", name: "guyana"},
+{imgSrc: "./images/haiti.gif", name: "haiti"},
+{imgSrc: "./images/jamaica.gif", name: "jamaica"},
+{imgSrc: "./images/nigeria.gif", name: "nigeria"},
+{imgSrc: "./images/south.gif", name: "south"},
+{imgSrc: "./images/vincy.gif", name: "vincy"},
+{imgSrc: "./images/dr.gif", name: "dr"},
+{imgSrc: "./images/barbados.gif", name: "barbados"},
+{imgSrc: "./images/ethiopia.gif", name: "ethiopia"},
+{imgSrc: "./images/ghana.gif", name: "ghana"},
+{imgSrc: "./images/guyana.gif", name: "guyana"},
+{imgSrc: "./images/haiti.gif", name: "haiti"},
+{imgSrc: "./images/jamaica.gif", name: "jamaica"},
+{imgSrc: "./images/nigeria.gif", name: "nigeria"},
+{imgSrc: "./images/south.gif", name: "south"},
+{imgSrc: "./images/vincy.gif", name: "vincy"},
 ];
 // const data = getData();
 
 const randomize = () => {
-    const cardData = getData();
-    console.log(cardData);
+    const flagData = getData();
+    flagData.sort(() => Math.random() - 0.5);
+    // console.log(flagData);
+    return flagData;
 };
+
+randomize();
+
+const flagGenerator = () => {
+    const flagData = randomize();
+    // console.log(flagData)
+    flagData.forEach((item) => {
+        const flag = document.createElement("div");  
+        const face = document.createElement("img")
+        const back = document.createElement("div")
+        flag.classList = 'flag';
+        face.classList = 'face';
+        back.classList = 'back';
+        
+        face.src = item.imgSrc;
+        
+        section.appendChild(flag);
+        flag.appendChild(face);
+        flag.appendChild(back);
+    }); 
+};
+ flagGenerator();
