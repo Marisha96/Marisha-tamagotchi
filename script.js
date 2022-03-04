@@ -1,13 +1,13 @@
 // let myName = window.prompt("enter name please?");
 // console.log("Hello", myName );
-document.getElementById("myButton").onclick = function() {
-    var myName = document.getElementById("myText").value;
-    console.log("Hello", myName);
-}
+// document.getElementById("myButton").onclick = function() {
+//     var myName = document.getElementById("myText").value;
+//     console.log("Hello", myName);
+// }
 
 const section = document.querySelector('section');
 const playerLivesCount = document.querySelector('span');
-let playerLives = 9;
+let playerLives = 11;
 
 
 //link text 
@@ -131,7 +131,7 @@ flags[index].setAttribute("name", item.name);
 section.style.pointerEvents = "none";
 }, 1000);
 });
-playerLives = 9;
+playerLives = 11;
 playerLivesCount.textContent = playerLives;
 setTimeout(() => window.alert(text), 100);
 
