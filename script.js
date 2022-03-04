@@ -21,6 +21,8 @@ const getData = () => [
 {imgSrc: "./images/nigeria.gif", name: "nigeria"},
 {imgSrc: "./images/south.gif", name: "south"},
 {imgSrc: "./images/vincy.gif", name: "vincy"},
+{imgSrc: "./images/trini.gif", name: "trini"},
+{imgSrc: "./images/kitts.gif", name: "kitts"},
 {imgSrc: "./images/dr.gif", name: "dr"},
 {imgSrc: "./images/barbados.gif", name: "barbados"},
 {imgSrc: "./images/ethiopia.gif", name: "ethiopia"},
@@ -31,6 +33,8 @@ const getData = () => [
 {imgSrc: "./images/nigeria.gif", name: "nigeria"},
 {imgSrc: "./images/south.gif", name: "south"},
 {imgSrc: "./images/vincy.gif", name: "vincy"},
+{imgSrc: "./images/trini.gif", name: "trini"},
+{imgSrc: "./images/kitts.gif", name: "kitts"},
 ];
 // const data = getData();
 
@@ -101,7 +105,7 @@ const checkFlags = (m) => {
    }
     }
     if(toggleFlag.length === 20)
-    restart("CONGRATULATIONS!!! You Know Your Flags");
+    restart("CONGRATULATIONS!!! 🙌🏾 You Know Your Flags");
 };
 
 const restart = (text) => {
