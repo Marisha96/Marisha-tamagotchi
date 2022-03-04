@@ -1,6 +1,13 @@
+// let myName = window.prompt("enter name please?");
+// console.log("Hello", myName );
+document.getElementById("myButton").onclick = function() {
+    var myName = document.getElementById("myText").value;
+    console.log("Hello", myName);
+}
+
 const section = document.querySelector('section');
 const playerLivesCount = document.querySelector('span');
-let playerLives = 7;
+let playerLives = 9;
 
 
 //link text 
@@ -104,7 +111,7 @@ const checkFlags = (m) => {
         }
    }
     }
-    if(toggleFlag.length === 20)
+    if(toggleFlag.length === 24)
     restart("CONGRATULATIONS!!! 🙌🏾 You Know Your Flags");
 };
 
@@ -124,9 +131,11 @@ flags[index].setAttribute("name", item.name);
 section.style.pointerEvents = "none";
 }, 1000);
 });
-playerLives = 7;
+playerLives = 9;
 playerLivesCount.textContent = playerLives;
 setTimeout(() => window.alert(text), 100);
 
 };
  flagGenerator();
+
+
