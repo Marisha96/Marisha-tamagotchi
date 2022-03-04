@@ -1,10 +1,10 @@
 const section = document.querySelector('section');
-const areYouSmart = document.querySelector('span');
-const areYouLives = 7;
+const playerLivesCount = document.querySelector('span');
+let playerLives = 7;
 
 
 //link text 
-areYouSmart.textContent = areYouLives;
+playerLivesCount.textContent = playerLives;
 
 // Generarting data
 // [{ imgSrc: './African American fLAG.gif'}]
@@ -81,14 +81,37 @@ const checkFlags = (m) => {
          flippedFlags[1].getAttribute('name'))
    {
        console.log("match");
+       flippedFlags.forEach(flag => {
+           flag.classList.remove("flipped");
+          flag.style.pointerEvents = "none"
+       });
    } else {
         console.log('wrong');
         flippedFlags.forEach((flag) => {
         flag.classList.remove("flipped");
-        flag.classList.remove("toggle");
+        setTimeout(() => flag.classList.remove("toggleFlag"), 1000);
   
-        })
+        });
+        playerLives--;
+        playerLivesCount.textContent = playerLives;
+        if(playerLives === 0) {
+            restart();
+        }
    }
     }
+};
+
+const restart = () => {
+let flagData = randomize();
+let  faces = document.querySelectorAll(".face");
+let flags = document.querySelectorAll(".flag")
+flagData.forEach((item,index) => {
+flags[index].classList.remove("toggleFlag");
+flags[index].style.pointerEvents = "all"
+faces[index].src = item.imgSrc;
+
+});
+playerLives = 7;
+playerLivesCount.textContent = playerLives
 };
  flagGenerator();
