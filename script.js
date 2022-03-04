@@ -73,6 +73,22 @@ const checkFlags = (m) => {
     console.log(m);
     const clickedFlag = m.target
     clickedFlag.classList.add("flipped")
+    const flippedFlags = document.querySelectorAll(".flipped")
+  
     // console.log(clickedFlag);
-}
+    if(flippedFlags.length === 2) {
+        if(flippedFlags[0].getAttribute('name') ===
+         flippedFlags[1].getAttribute('name'))
+   {
+       console.log("match");
+   } else {
+        console.log('wrong');
+        flippedFlags.forEach((flag) => {
+        flag.classList.remove("flipped");
+        flag.classList.remove("toggle");
+  
+        })
+   }
+    }
+};
  flagGenerator();

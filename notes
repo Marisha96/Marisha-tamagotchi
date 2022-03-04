@@ -12,3 +12,13 @@ Making another function,
  so know when the cards is flipped and they 
  are equal they will stay flipped, if not they
   will turn back over.
+
+
+i made my if, else statement, which shows that if fliiped two cards over 
+it will either say match or wrong.
+
+
+  i need to add a timer to so that it is timeout 
+  by it self when being flipped or toggle.
+
+
