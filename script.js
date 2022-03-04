@@ -74,6 +74,7 @@ const checkFlags = (m) => {
     const clickedFlag = m.target
     clickedFlag.classList.add("flipped")
     const flippedFlags = document.querySelectorAll(".flipped")
+    const toggleFlag = document.querySelectorAll(".toggleFlag")
   
     // console.log(clickedFlag);
     if(flippedFlags.length === 2) {
@@ -95,10 +96,12 @@ const checkFlags = (m) => {
         playerLives--;
         playerLivesCount.textContent = playerLives;
         if(playerLives === 0) {
-            restart();
+            restart("HAha You Lost 🥵🥵 ");
         }
    }
     }
+    if(toggleFlag.length === 20)
+    restart("CONGRATULATIONS!!! You Know Your Flags");
 };
 
 const restart = (text) => {
@@ -119,9 +122,7 @@ section.style.pointerEvents = "none";
 });
 playerLives = 7;
 playerLivesCount.textContent = playerLives;
-setTimeout(() => { window.alert(text).100);
-    
-};
+setTimeout(() => window.alert(text), 100);
 
 };
  flagGenerator();
