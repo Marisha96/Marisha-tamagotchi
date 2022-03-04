@@ -101,17 +101,27 @@ const checkFlags = (m) => {
     }
 };
 
-const restart = () => {
+const restart = (text) => {
 let flagData = randomize();
 let  faces = document.querySelectorAll(".face");
 let flags = document.querySelectorAll(".flag")
+section.style.pointerEvents = "none";
 flagData.forEach((item,index) => {
 flags[index].classList.remove("toggleFlag");
+
+setTimeout(() => {
+    
 flags[index].style.pointerEvents = "all"
 faces[index].src = item.imgSrc;
-
+flags[index].setAttribute("name", item.name);
+section.style.pointerEvents = "none";
+}, 1000);
 });
 playerLives = 7;
-playerLivesCount.textContent = playerLives
+playerLivesCount.textContent = playerLives;
+setTimeout(() => { window.alert(text).100);
+    
+};
+
 };
  flagGenerator();

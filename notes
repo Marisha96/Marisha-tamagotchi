@@ -21,4 +21,12 @@ it will either say match or wrong.
   i need to add a timer to so that it is timeout 
   by it self when being flipped or toggle.
 
+I ALSO ADDED a timer to when you run out of lives, it restarts
+the game and switches up the order of the cards.
+
+added an alert to let you know if you win or you lost,
+also set a timer on the cards so it flipped back within 
+one second if flipped incorrectly.
+
+when you run out of lives, the game resets and randomize.
 
